@@ -1,0 +1,51 @@
+/*GLOBALES*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px*/
+  font-family: "Mukta", sans-serif;
+}
+
+/*MAIN*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+  background-color: #A5956D;
+  min-width: 40rem;
+  max-width: 50rem;
+  padding: 3rem;
+  border: .2rem solid ;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #8AAAA5;
+    -webkit-text-stroke: .02rem #ffffff;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #CFDBDA;
+}
+ 
+ul {
+    padding: 0rem 2rem;
+    min-height: 5rem;
+}
+
+ul li {
+    list-style: none;
+    color: #E2EEEC;
+    background-color: #CABD9A;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+  
