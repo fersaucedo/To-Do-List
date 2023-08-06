@@ -6,8 +6,6 @@ html {
   font-family: "Mukta", sans-serif;
 }
 
-/*MAIN*/
-
 body {
     display: flex;
     justify-content: center;
@@ -15,37 +13,74 @@ body {
     height: 100vh;
 }
 
+/*MAIN*/
+
 main {
-  background-color: #A5956D;
+  background-color: #ccb4c3;
   min-width: 40rem;
   max-width: 50rem;
   padding: 3rem;
-  border: .2rem solid ;
+  border: .2rem solid #fffae8;
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #8AAAA5;
-    -webkit-text-stroke: .02rem #ffffff;
+    color: #f9edc2;
+    margin: 0 0 1rem;
 }
 
 span {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    color: #CFDBDA;
+    color: #f8f9f4;
+    border-bottom: .1rem solid #5d3277;
 }
  
 ul {
     padding: 0rem 2rem;
     min-height: 5rem;
+    margin: 3rem 0;
 }
 
 ul li {
     list-style: none;
-    color: #E2EEEC;
-    background-color: #CABD9A;
-    font-size: 1.6rem;
+    color: #f8f9f4;
+    background-color: #f9edc2;
+    font-size: 1.8rem;
     text-transform: uppercase;
+    margin-bottom: .6rem;
+    padding: .5rem;
 }
-  
+
+/*FORM*/
+
+
+form label {
+    display: block;
+    font-size: 1.5rem;
+    color: #f8f9f4;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+form input {
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 1rem;
+    margin-right: .5rem;
+}
+
+form button {
+    height: 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: #a16db7;
+    border: none;
+    color: #f8f9f4;
+}
+
+form button:active {
+    background-color: #5d3277;
+    font-weight: bold;
+}
