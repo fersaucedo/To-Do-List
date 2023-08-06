@@ -2,15 +2,33 @@ let ul = document.getElementById("ul");
 let input = document.getElementById("input");
 let btn = document.getElementById("btn");
 
-btn.addEventListener("click",function(e) {
+btn.addEventListener("click", function (e) {
 
-    e.preventDefault();
+  //para evitar que la pagina se refresque
+  e.preventDefault();
 
-    let li = document.createElement("li");//se crea la variable li para crear el elemento contenedor de la entrada del input
+  //validacion
+  if (input.value == "") {
+    alert("Debe ingresar un valor");
+  } else {
 
-    li.innerHTML = input.value// al contenedor li se le asigna el valor del input
+    //se crea el elemento input checkbox
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
 
-    ul.appendChild(li); //se agrega al elemento html
+    //se crea la variable li para crear el elemento contenedor del elemento checkbox y de la entrada del input
+    let li = document.createElement("li");
 
+    //para agregar el elemento checkbox al elemento li
+    li.appendChild(checkbox);
+
+    //para agregar el valor del elemento input de tipo texto
+    li.appendChild(document.createTextNode(input.value));
+
+    //se agrega al elemento html
+    ul.appendChild(li);
+
+    //para resetear el valor del input
     input.value = "";
+  }
 });
