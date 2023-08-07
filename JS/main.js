@@ -51,8 +51,12 @@ function crearElemento() {
   //para resetear el valor del input
   input.value = "";
 
-  //accion para el checkbox //SE AGREGA EN LA FUNCION PORQUE PERTENECES VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM
+  //accion para el checkbox //SE AGREGA EN LA FUNCION PORQUE VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM 
   checkbox.addEventListener("click", function (e) {
+
+    // encuentra el elemento li que contiene el checkbox seleccionado
+    let li = e.target.closest("li");
+
     if (e.target.checked) {
       modal.style.display = "flex";
     } else {
@@ -61,12 +65,13 @@ function crearElemento() {
     }
   });
 
+  //evento para cerrar el modal y que se tache la tarea realizada
   cerrar.addEventListener("click", function () {
     modal.style.display = "none";
     li.classList.add("checked");
   });
 
-  // evento para eliminar al hacer clic en el SVG. //SE AGREGA EN LA FUNCION PORQUE PERTENECES VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM
+  // evento para eliminar al hacer clic en el SVG. //SE AGREGA EN LA FUNCION PORQUE VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM 
   svgContainer.addEventListener("click", function (e) {
     //selecciona el elemento li mas cercano
     let li = e.target.closest("li");

@@ -46,7 +46,7 @@ ul {
 ul li {
     list-style: none;
     color: #ffffff;
-    background-color: #f9edc2;
+    background-color: #d4caa0;
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: .6rem;
@@ -97,11 +97,16 @@ form button {
     background-color: #a16db7;
     border: none;
     color: #f8f9f4;
+    cursor: pointer;
+    box-shadow: -3px 4px 5px 0px rgba(0,0,0,0.21);
 }
+
+
 
 form button:active {
     background-color: #5d3277;
     font-weight: bold;
+    box-shadow: none;
 }
 
 /*MODAL*/
@@ -121,6 +126,7 @@ form button:active {
 .modal {
     height: 15rem;
     width: 20rem;
+    padding: 2rem;
     background-color: #1eff05;
     position: absolute;
     top: 50%;
@@ -132,7 +138,13 @@ form button:active {
     justify-content: center;
     color: #ffffff;
     font-size: 1.2rem;
+    text-align: center;
     border: .1rem solid #ffffff;
+}
+
+.modal button {
+    cursor: pointer;
+
 }
 
 .modal p,
