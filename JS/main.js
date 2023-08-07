@@ -1,6 +1,8 @@
 let ul = document.getElementById("ul");
 let input = document.getElementById("input");
 let btn = document.getElementById("btn");
+let modal = document.getElementById("modal");
+let cerrar = document.getElementById("cerrar");
 
 function crearElemento() {
   //se crea el elemento input checkbox
@@ -52,12 +54,17 @@ function crearElemento() {
   //accion para el checkbox //SE AGREGA EN LA FUNCION PORQUE PERTENECES VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM
   checkbox.addEventListener("click", function (e) {
     if (e.target.checked) {
-      li.classList.add("checked");
+      modal.style.display = "flex";
     } else {
+      modal.style.display = "none";
       li.classList.remove("checked");
     }
   });
 
+  cerrar.addEventListener("click", function () {
+    modal.style.display = "none";
+    li.classList.add("checked");
+  });
 
   // evento para eliminar al hacer clic en el SVG. //SE AGREGA EN LA FUNCION PORQUE PERTENECES VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM
   svgContainer.addEventListener("click", function (e) {

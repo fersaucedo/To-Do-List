@@ -14,13 +14,21 @@
 </head>
 
 <body>
-    <main>
-        
-        <h1>Que tenemos pendiente?</h1>
+    <header>
+        <h1>Qué tenemos pendiente?</h1>
         <span>Hoy vamos a hacer:</span>
+    </header>
+
+    <main>
+        <div id="modal" class="modal">
+            <p>
+                Felicitaciones! completaste la tarea
+            </p>
+            <button id="cerrar">Chagracia!</button>
+        </div>
 
         <ul id="ul">
-            
+
         </ul>
 
         <form>
@@ -28,6 +36,7 @@
             <input type="text" autocomplete="off" id="input">
             <button id="btn">Agregar</button>
         </form>
+
     </main>
 
     <script src="./JS/main.js"></script>
