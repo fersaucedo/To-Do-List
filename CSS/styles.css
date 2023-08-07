@@ -62,7 +62,8 @@ ul li {
     gap: .5rem;
 }
 
-.container svg {
+.svgContainer {
+    display: flex;
     cursor: pointer;
 }
 
