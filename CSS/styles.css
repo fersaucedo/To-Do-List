@@ -51,10 +51,19 @@ ul li {
     text-transform: uppercase;
     margin-bottom: .6rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul li input {
-    margin-right: 2rem;
+.container {
+    display: flex;
+    gap: .5rem;
+}
+
+.container svg {
+    cursor: pointer;
 }
 
 .checked {
