@@ -45,7 +45,7 @@ ul {
 
 ul li {
     list-style: none;
-    color: #f8f9f4;
+    color: #ffffff;
     background-color: #f9edc2;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -55,6 +55,11 @@ ul li {
 
 ul li input {
     margin-right: 2rem;
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #1eff05;
 }
 
 /*FORM*/
