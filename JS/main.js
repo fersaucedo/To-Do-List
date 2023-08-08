@@ -58,6 +58,7 @@ function crearElemento() {
     let li = e.target.closest("li");
 
     if (e.target.checked) {
+      li.classList.add("checked");
       modal.style.display = "flex";
     } else {
       modal.style.display = "none";
@@ -68,7 +69,6 @@ function crearElemento() {
   //evento para cerrar el modal y que se tache la tarea realizada
   cerrar.addEventListener("click", function () {
     modal.style.display = "none";
-    li.classList.add("checked");
   });
 
   // evento para eliminar al hacer clic en el SVG. //SE AGREGA EN LA FUNCION PORQUE VA A TRABAJAR CON LOS ELEMENTOS CREADOS EN EL DOM 

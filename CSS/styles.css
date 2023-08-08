@@ -1,4 +1,4 @@
-/*GLOBALES*/
+/* globales*/
 
 html {
   box-sizing: border-box;
@@ -16,11 +16,11 @@ body {
     background-color: #ccb4c3;
     min-width: 40rem;
     max-width: 50rem;
-    padding: 3rem;
+    padding: 3rem 3rem 0;
     border: .2rem solid #fffae8;
 }
 
-/*MAIN*/
+/* main */
 
 
 h1 {
@@ -40,6 +40,8 @@ span {
 ul {
     padding: 0rem 2rem;
     min-height: 5rem;
+    max-height: 30rem;
+    overflow-y: auto;
     margin: 3rem 0;
 }
 
@@ -55,6 +57,7 @@ ul li {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    max-width: 50rem;
 }
 
 .container {
@@ -69,15 +72,14 @@ ul li {
 
 .checked {
     text-decoration: line-through;
-    background-color: #1eff05;
+    background-color: #91c27d;
 }
 
-/*FORM*/
-
+/* form */
 
 form label {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #f8f9f4;
     text-transform: uppercase;
     margin-bottom: .5rem;
@@ -93,7 +95,7 @@ form input {
 form button {
     height: 2.5rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background-color: #a16db7;
     border: none;
     color: #f8f9f4;
@@ -101,15 +103,13 @@ form button {
     box-shadow: -3px 4px 5px 0px rgba(0,0,0,0.21);
 }
 
-
-
 form button:active {
     background-color: #5d3277;
     font-weight: bold;
     box-shadow: none;
 }
 
-/*MODAL*/
+/* modal */
 
 @keyframes shake {
     0%, 100% {
@@ -127,7 +127,7 @@ form button:active {
     height: 15rem;
     width: 20rem;
     padding: 2rem;
-    background-color: #1eff05;
+    background-color: #6ea023;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -137,7 +137,7 @@ form button:active {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     border: .1rem solid #ffffff;
 }
@@ -152,3 +152,16 @@ form button:active {
     animation: shake .8s ease-in-out;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer p {
+    font-size: 1.3rem;
+    margin: 0;
+}
