@@ -75,9 +75,9 @@ ul li {
     background-color: #91c27d;
 }
 
-/* form */
+/* contenedor-input */
 
-form label {
+.contenedor-input label {
     display: block;
     font-size: 1.6rem;
     color: #f8f9f4;
@@ -85,14 +85,14 @@ form label {
     margin-bottom: .5rem;
 }
 
-form input {
+.contenedor-input input {
     font-size: 1.6rem;
     border: none;
     padding: 1rem;
     margin-right: .5rem;
 }
 
-form button {
+.contenedor-input button {
     height: 2.5rem;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -103,7 +103,7 @@ form button {
     box-shadow: -3px 4px 5px 0px rgba(0,0,0,0.21);
 }
 
-form button:active {
+.contenedor-input button:active {
     background-color: #5d3277;
     font-weight: bold;
     box-shadow: none;
